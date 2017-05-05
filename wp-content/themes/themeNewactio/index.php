@@ -6,8 +6,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
+                    <h1><i class="fa fa-users fa-1x" aria-hidden="true"></i></h1>
             </div>
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
@@ -79,8 +78,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
+                    <h2>Sobre a Actio</h2>
+                    <h1><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></h1>
                 </div>
             </div>
             <div class="row">
@@ -91,9 +90,9 @@
                     <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
+                  <!--  <a href="#" class="btn btn-lg btn-outline">
                         <i class="fa fa-download"></i> Download Theme
-                    </a>
+                    </a>-->
                 </div>
             </div>
         </div>
@@ -104,8 +103,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
+                    <h2>Contato</h2>
+                    <h1 class="space">
+                   <i class="fa fa-rocket fa-2x" aria-hidden="true"></i>
+                   </h1>
+
                 </div>
             </div>
             <div class="row">
@@ -115,29 +117,29 @@
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <label for="name">Nome</label>
+                                <input type="text" class="form-control" placeholder="Nome" id="name" required data-validation-required-message="Nome e obrigatório.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="email">Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="E-mail e obrigatório.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" class="form-control" placeholder="Telefone" id="phone" required data-validation-required-message="Telefone e obrigatório.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="message">Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <label for="message">Mensagem</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="Mensagem" required data-validation-required-message="Mensagem é obrigatória"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -145,7 +147,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                <button type="submit" class="btn btn-success btn-lg">Enviar Mensagem</button>
                             </div>
                         </div>
                     </form>

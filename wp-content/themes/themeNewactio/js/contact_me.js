@@ -1,4 +1,4 @@
-$(function() {
+jQuery(function($) {
 
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
@@ -9,7 +9,7 @@ $(function() {
             // Prevent spam click and default submit behaviour
             $("#btnSubmit").attr("disabled", true);
             event.preventDefault();
-            
+
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
@@ -65,9 +65,10 @@ $(function() {
         e.preventDefault();
         $(this).tab("show");
     });
-});
-
-// When clicking on Full hide fail/success boxes
+    // When clicking on Full hide fail/success boxes
 $('#name').focus(function() {
     $('#success').html('');
 });
+
+});
+

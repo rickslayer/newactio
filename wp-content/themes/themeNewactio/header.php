@@ -45,10 +45,13 @@ SECTION HEADER
                                         <a href="#portfolio">Portfolio</a>
                                     </li>
                                     <li class="page-scroll">
-                                        <a href="#about">About</a>
+                                        <a href="#about">Sobre</a>
                                     </li>
                                     <li class="page-scroll">
-                                        <a href="#contact">Contact</a>
+                                        <a href="#contact">Contato</a>
+                                    </li>
+                                     <li class="page-scroll">
+                                        <a href="#blog">Blog</a>
                                     </li>
                                 </ul>
                             </div>

@@ -25,7 +25,9 @@ function actio_load_scripts(){
 
     wp_enqueue_style( 'freelancer', get_template_directory_uri() . '/css/freelancer.css', array(), '3.3.7+1', 'all' );
 
-    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/vendor/jquery/jquery.min.js', array(), '3.3.7', true );
+    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/vendor/jquery/jquery.js', array(), '3.3.7', 'all' );
+
+     wp_enqueue_script( 'contactme', get_template_directory_uri() . '/js/contact_me.js', array(), '', true );
 
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/vendor/bootstrap/js/bootstrap.min.js', array('jquery'), '1.12.4', true );
 
@@ -33,9 +35,9 @@ function actio_load_scripts(){
 
     wp_enqueue_script( 'bootstrapvalidation', get_template_directory_uri() . '/js/jqBootstrapValidation.js', array('jquery'), '1.3.6', true );
 
-    wp_enqueue_script( 'contactme', get_template_directory_uri() . '/js/contact_me.js', array('jquery'), '1.0.0', true );
-
     wp_enqueue_script( 'freelancerjs', get_template_directory_uri() . '/js/freelancer.js', array('jquery'), '3.3.7+1', true );
+
+
 
  }
  add_action( 'wp_enqueue_scripts', 'actio_load_scripts_front');
