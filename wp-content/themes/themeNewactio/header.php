@@ -7,7 +7,7 @@ SECTION HEADER
 */
 ?>
 <!DOCTYPE html>
-<html <?php language_attributeS(); ?>>
+<html <?php language_attributes(); ?>>
 <head>
     <title></title>
     <meta charset="<?php bloginfo('charset' ); ?>">

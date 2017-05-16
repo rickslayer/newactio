@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
     <!-- Portfolio Grid Section -->
+    <input type="hidden" name="ajaxurl" id="ajaxurl" value="<?php echo admin_url('admin-ajax.php');?>"/>
     <section id="portfolio">
         <div class="container">
             <div class="row">
@@ -82,18 +83,11 @@
                     <h1><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                  <!--  <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>-->
-                </div>
+
+
+
+            <div class="row" id="sobre_Actio">
+
             </div>
         </div>
     </section>
@@ -155,4 +149,52 @@
             </div>
         </div>
     </section>
+ <script type="text/javascript">
+                         jQuery(function($) {
+                                var urlajax = $("#ajaxurl").val();
+
+                                var call = $.ajax({
+                                    url: urlajax,
+                                    dataType: "json",
+                                    method: "post",
+                                    data : {
+                                        action : 'actio_get_post_by_category'
+                                    }
+
+
+                                });
+                                call.done(function(data){
+                                        var clientes = $("#sobre_Actio");
+
+                                    $.each(data, function(i, field){
+
+
+
+                                        var h1 = $("<h1>",{
+                                            "text" : field.post_title
+                                        });
+
+                                        var p = $("<p>").html(field.post_content).text();
+
+                                        var div = $("<div>",{
+                                                    'class':"col-sm-6"
+                                        });
+
+
+
+
+
+
+                                        $(clientes).append(div);
+                                         $(div).append(h1);
+                                         $(div).append(p);
+
+
+                                    });
+
+                                });
+                              console.log(clientes);
+
+                         });
+                     </script>
 <?php get_footer(); ?>
